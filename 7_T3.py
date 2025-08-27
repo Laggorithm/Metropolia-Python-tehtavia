@@ -16,6 +16,10 @@ def IndexCheck():
         UserInputIndex = input("Enter index of airport:")
         if UserInputIndex in FlightIndexes:
             print(f"Name of airport: {FlightIndexes[UserInputIndex]}")
+        elif len(FlightIndexes) == 0:
+            print("No airports found, add one")
+        else:
+            print("Not found")
     except ValueError:
         print("Something went wrong")
     return
