@@ -11,6 +11,7 @@ def IndexAdd():
     except ValueError:
         print("Something went wrong")
         return FlightIndexes
+################################################
 def IndexCheck():
     try:
         UserInputIndex = input("Enter index of airport:")
@@ -23,7 +24,7 @@ def IndexCheck():
     except ValueError:
         print("Something went wrong")
     return
-
+##################################################
 while True:
     try:
         question = input("New airport, or searching an existing one? (1/2): ")

@@ -1,5 +1,5 @@
-MadeupBool = 0
-while MadeupBool == 0:
+
+while True:
     tuuma = float(input("Tuuma: "))
     if tuuma > 0:
         cm = tuuma * 2.54
@@ -7,3 +7,4 @@ while MadeupBool == 0:
     else:
         print("ei miinuksia sallittuna, bye")
         MadeupBool = 1
+
