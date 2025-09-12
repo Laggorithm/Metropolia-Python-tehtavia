@@ -11,7 +11,6 @@ def CodeToName(Code):
     sql = f"select name from airport where ident = '{Code}';"
     cursor.execute(sql)
     result = cursor.fetchall()
-    print(sql)
     for row in result:
         print(row[0])
         cursor.close()

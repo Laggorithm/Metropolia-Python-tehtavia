@@ -13,19 +13,14 @@ def CodeToName(Code):
     sql = f"select * from airport where iso_country = '{Code}' and type = 'heliport';"
     cursor.execute(sql)
     result = cursor.fetchall()
-    print(sql)
     for row in result:
-        print(row[0])
         HeliRowCount += 1
         for row in result:
-            print(row[0])
             AirportRowCount += 1
     sql2 = f"select * from airport where iso_country = '{Code}' and type = 'small_airport';"
     cursor.execute(sql2)
     result2 = cursor.fetchall()
-    print(sql2)
     for row in result2:
-        print(row[0])
         AirportRowCount += 1
     cursor.close()
     connection.close()
