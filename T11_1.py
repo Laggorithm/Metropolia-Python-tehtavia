@@ -11,7 +11,7 @@ class Lehti(Julkaisu):
         self.toimit = toimit
         super().__init__(name)
 JulkaisuList = [Lehti("Aku Ankka", "Aki Hyppä"), Kirja("Hytti n:o 6","Rosa Liksom",200)]
-def PrintJulkaisu(julkaisuNimi):
+def PrintJulkaisu(julkaisuNimi):    
         for julkaisu in JulkaisuList:
             if isinstance(julkaisu, Kirja) and julkaisu.name == julkaisuNimi:
                 print(f"{julkaisu.name} is been written by {julkaisu.writer}, and has {julkaisu.pages} pages.")

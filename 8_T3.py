@@ -20,4 +20,5 @@ Code2 = input("Anna ICAO-koodia: ")
 pos2 = CodeToName(Code2)
 print(pos2)
 connection.close()
-print(distance.distance(pos1, pos2).km)
+distance = distance.distance(pos1, pos2).km
+print(f"{round(distance, 2)} kilometria")

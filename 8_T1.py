@@ -8,11 +8,12 @@ connection = mysql.connector.connect(
          autocommit=True)
 def CodeToName(Code):
     cursor = connection.cursor()
-    sql = f"select name from airport where ident = '{Code}';"
+    sql = f"select name, municipality from airport where ident = '{Code}';"
     cursor.execute(sql)
     result = cursor.fetchall()
     for row in result:
         print(row[0])
+        print(row[1])
         cursor.close()
         connection.close()
     return
